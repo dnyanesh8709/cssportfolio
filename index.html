@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        :root {
+            --theme: coral;
+        }
+
+        .hero {
+            height: calc(100vh - 75px);
+            background-image: url(assets/images/bg.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+        }
+
+
+        .hero-img {
+            position: absolute;
+            top: 0%;
+            right: 0;
+            height: calc(100vh - 75px);
+
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            color: white;
+        }
+
+        p {
+            width: 50%;
+            line-height: 2.7rem;
+            margin-bottom: 1.5rem;
+            font-size: 40px;
+        }
+
+        a {
+            color: var(--theme);
+            text-decoration: none;
+            border: 2px solid var(--theme);
+            padding: 0.5rem 1.5rem;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        .hero a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: var(--theme);
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 35px;
+
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .skills {
+            /* height: 200px;
+            background-color: var(--theme); */
+            margin-top: 2rem;
+            width: 80%;
+            display: flex;
+            margin: 2rem auto 0px;
+            gap: 2rem;
+        }
+
+        .progress {
+            background-color: gray;
+            height: 2rem;
+            margin: 2rem 0;
+        }
+
+        .progress-bar {
+            background-color: var(--theme);
+            height: 2rem;
+            /* width: 45%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frontend {
+            width: 50%;
+            font-size: 25px;
+        }
+
+        .backend {
+            width: 50%;
+            font-size: 25px;
+        }
+
+        .html {
+            width: 80%;
+            font-size: 25px;
+        }
+
+        .css {
+            width: 60%;
+            font-size: 25px;
+        }
+
+        .projects {
+            width: 80%;
+            margin: 2rem auto;
+            display: flex;
+            gap: 2rem;
+
+        }
+
+
+        .card {
+            border: 2px solid var(--theme);
+            width: 25%;
+
+        }
+
+        .card img {
+            max-width: 100%;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-content">
+
+            <h1> HI my Name is John</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Assumenda
+                dolorem minus unde
+                ipsa reiciendis dolores
+                animi consectetur voluptatum labore at totam dignissimos debitis quas vel consequuntur, dolorum maxime
+                doloremque eius quo similique esse ad accusantium modi laborum. Saepe, doloremque explicabo!</p>
+            <a href="">hire me</a>
+        </div>
+        <img class="hero-img" src="assets/images/bg-dots.svg" alt="">
+        <img class="hero-img" src="assets/images/user.png" alt="">
+    </div>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="">Education</a>
+        <a href="">projects</a>
+        <a href="">Experience</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="skills">
+        <div class="frontend">
+            <div class="progress">
+                <div class="progress-bar html">Html</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css">Html</div>
+            </div>
+        </div>
+        <div class="backend">
+            <div class="progress">
+                <div class="progress-bar html">Html</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar css">Html</div>
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1673548917645-e8d9ed21e2b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1673548917645-e8d9ed21e2b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1673548917645-e8d9ed21e2b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1673548917645-e8d9ed21e2b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="">
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem, ipsum.</p>
+                <a href="">Visit</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
